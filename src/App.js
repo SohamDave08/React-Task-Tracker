@@ -26,11 +26,23 @@ function App() {
     }
   ])
 
+  // Delete Task ----> PROP DRILLING
+  const delTask = (id) => {
+    console.log(`Delete ${id}`);
+    setTasks(tasks.filter((curTask) => {
+      if(curTask.id != id)
+        return curTask;
+    }))
+  };
+
 
   return (
     <div className="container">
       <Header title="Task Tracker" />
-      <Tasks tasks={tasks}/>
+      {tasks.length > 0 ? 
+        <Tasks tasks={tasks} onDelete={delTask}/> : 'No Task to display'
+      }
+      
     </div>
   );
 }
