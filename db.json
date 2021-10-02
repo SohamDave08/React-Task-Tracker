@@ -17,6 +17,12 @@
       "text": "Food Shooping",
       "day": "Jan 19th at 7:00pm",
       "reminder": false
+    },
+    {
+      "id": 4,
+      "text": "Cloth Shooping",
+      "day": "Jan 20th at 9:00pm",
+      "reminder": false
     }
   ]
 }
