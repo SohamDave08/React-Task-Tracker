@@ -11,6 +11,7 @@ body {
 }
 
 .container {
+  max-height: calc(100vh - 60px);
   max-width: 500px;
   margin: 30px auto;
   overflow: auto;
@@ -18,6 +19,8 @@ body {
   border: 1px solid steelblue;
   padding: 30px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -54,6 +57,30 @@ body {
   width: 100%;
 }
 
+.tasks-container {
+  width: 100%;
+  overflow: auto;
+  max-height: calc(100% - 500px);
+  scrollbar-color: red;
+}
+
+.tasks-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tasks-container::-webkit-scrollbar-track {
+  background: gainsboro;
+  border-radius: 20px;
+}
+
+.tasks-container::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 20px;
+  border: 3px solid gainsboro;
+}
+
+
+
 .task {
   background: #f4f4f4;
   margin: 5px;
@@ -86,7 +113,7 @@ body {
 .form-control input {
   width: 100%;
   height: 40px;
-  margin: 5px;
+  margin: 5px 0;
   padding: 3px 7px;
   font-size: 17px;
 }
@@ -94,16 +121,14 @@ body {
 .form-control-check {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.form-control-check label {
-  flex: 1;
+  justify-content: flex-start;
 }
 
 .form-control-check input {
-  flex: 2;
+  width: 20px;
   height: 20px;
+  margin-right: 20px;
+  cursor: pointer;
 }
 
 footer {
