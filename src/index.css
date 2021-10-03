@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,15 +7,15 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
   max-height: calc(100vh - 60px);
   max-width: 500px;
-  margin: 30px auto;
+  margin: 100px auto;
   overflow: auto;
-  min-height: 300px;
+  min-height: 100px;
   border: 1px solid steelblue;
   padding: 30px;
   border-radius: 5px;
@@ -78,8 +78,6 @@ body {
   border-radius: 20px;
   border: 3px solid gainsboro;
 }
-
-
 
 .task {
   background: #f4f4f4;
